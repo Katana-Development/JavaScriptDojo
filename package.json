@@ -1,0 +1,21 @@
+{
+  "name": "jsdojo",
+  "displayName": "jsdojo",
+  "description": "JavaScript Dojo is a dojo(theme) for JavaScript Ninjas. This theme is professional, it does not contain a bunch of high contrast fun colors to look at, while at the same time decreases readability. Make no mistake, this theme is beautiful, and very readable. It takes full advantage of VSC's customizability and syntax highlight in a way that gives the programer an edge over the other near infanite, mediocre themes.  This is not a remake of a color theme thats old and played out, this is new fresh, and is created specificly to enhance readability, and code highlighting.",
+  "version": "0.0.1",
+  "engines": {
+      "vscode": "^1.50.0"
+  },
+  "categories": [
+      "Themes"
+  ],
+  "contributes": {
+      "themes": [
+          {
+              "label": "JS_Dojo",
+              "uiTheme": "vs-dark",
+              "path": "./themes/JS_Dojo-color-theme.json"
+          }
+      ]
+  }
+}
