@@ -6,7 +6,7 @@
   // Font Settings ('Editor')
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12.25,
+  "editor.fontSize": 12,
   "editor.fontWeight": "500",
   "editor.lineHeight": 24,
 
