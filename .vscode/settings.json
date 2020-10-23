@@ -59,11 +59,420 @@
   "editor.rulers": [85],
 
   // Mini-Map
-  "editor.minimap.maxColumn": 64, 
-  "editor.minimap.scale": 2,
+  "editor.minimap.maxColumn": 64,
+  "editor.minimap.scale": 1,
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "proportional",
 
   // Miscellaneous
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+
+  "todo-tree.general.tags": [
+    " <|ERROR|> ",
+    " <|TYPE-ERROR|> ",
+    " <|SYNTAX-ERROR|> ",
+    " <|RANGE-ERROR|> ",
+    " <|TODO|> ",
+    " <|NOTE|> ",
+    " <|INFO|> ",
+    " <|REMEMBER|> ",
+    " <|FIX|> ",
+    " <|ADD|> ",
+    " <|CHANGE|> ",
+    " <|REMOVE|> "
+  ],
+  "todo-tree.general.tagGroups": {
+    "<|FIX|>": [" <|FIX|> ", " <|ADD|> ", " <|CHANGE|> ", " <|REMOVE|> "],
+    "<|ERROR|>": [
+      " <|ERROR|> ",
+      " <|TYPE-ERROR|> ",
+      " <|SYNTAX-ERROR|> ",
+      " <|RANGE-ERROR|> "
+    ],
+    "<|TODO|>": [" <|TODO|> ", " <|NOTE|> ", " <|INFO|> ", "<|REMEMBER|> "]
+  },
+  "todo-tree.highlights.customHighlight": {
+    "<|ERROR|>": {
+      "icon": "flame",
+      "iconColour": "#D02020",
+      "gutterIcon": true,
+      "type": "tag-and-comment",
+      "foreground": "#A84040",
+      "background": "#0A0A14",
+      "borderRadius": "8px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "textDecoration": "none"
+    },
+    "<|TODO|>": {
+      "icon": "megaphone",
+      "iconColour": "#20D400",
+      "gutterIcon": true,
+      "type": "tag-and-comment",
+      "foreground": "#28FF00",
+      "background": "#000",
+      "opacity": 100,
+      "borderRadius": "2px",
+      "fontWeight": "800",
+      "fontStyle": "normal",
+      "textDecoration": "underline"
+    },
+    "<|FIX|>": {
+      "icon": "code",
+      "iconColour": "#FFFF00",
+      "gutterIcon": true,
+      "type": "tag-and-comment",
+      "foreground": "#FFFF00",
+      "background": "#000",
+      "opacity": 100,
+      "borderRadius": "2px",
+      "fontWeight": "800",
+      "fontStyle": "normal",
+      "textDecoration": "underline"
+    }
+  },
+
+  // <|ERROR|> Hello World!
+  // <|FIX|> Hello World
+  // <|TODO|> Hello World!
+  /*
+ 
+
+    <|===x===x===x===x===x===x===x===x===x===x===x===x===|>
+            ==|>  [A1]  Hello World!
+            .=|>  [A2]  Hello World!
+        ______________________________________________
+            ==>  [B1]  Hello World!
+            >=>  [B2]  Hello World!
+        ______________________________________________
+            -|>  [C1]  Hello World!    
+            ~|>  [C2]  Hello World!    
+        ______________________________________________
+            ->   [D1]  Hello World!
+            =>   [D2]  Hello World!
+        ______________________________________________
+            !||>  [E1]  Hello World!
+            ||>  [E2]  Hello World!
+        ______________________________________________
+            !!|>  [F1]  Hello World!
+            |||>  [F2]  Hello World!
+        ______________________________________________
+            -->  [F1]  Hello World!
+            >->  [F2]  Hello World!
+        ______________________________________________
+            >>  [G1]  Hello World!
+            *>  [G2]  Hello World!
+    <|===x===x===x===x===x===x===x===x===x===x===x===x===|>
+
+
+*/
+  "better-comments.tags": [
+
+    /*
+
+    _________________________________________________________________________________
+                       <|===( COMMENT HIGHLIGHTERS )===|>
+    _______________________________________________________________________________*/
+    {
+      "tag": "-|> ",
+      "color": "#40FF00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "~|> ",
+      "color": "#72FF72",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+        "tag": "==> ",
+        "color": "#14BCFF",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "tag": ">=> ",
+        "color": "#48E8FF",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+
+      {
+        "tag": "--> ",
+        "color": "#FF00CF",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "tag": ">-> ",
+        "color": "#FF80D4",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+
+
+      {
+        "tag": " >> ",
+        "color": "#00E8C0",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "tag": " *> ",
+        "color": "#80FFDF",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+
+    {
+      "tag": "!||> ",
+      "color": "#EEEE1E",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "||> ",
+      "color": "#FAFF56",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": " !!|> ",
+      "color": "#FF2010",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": " |||> ",
+      "color": "#FF5050",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "==|> ",
+      "color": "#E46B24",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": ".=|> ",
+      "color": "#FB8B44",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "-> ",
+      "color": "#9840FF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "=> ",
+      "color": "#A888FF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    /*
+
+
+    _________________________________________________________________________________
+                       <|===( CODE DIVIDERS )===|>
+    _______________________________________________________________________________*/
+    {
+      "tag": "<|===x===",
+      "color": "#004FFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "===x===",
+      "color": "#004FFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "<==*",
+      "color": "#E0EA7A",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "........",
+      "color": "#F8FF9D",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "____",
+      "color": "#40FF40",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    /*
+
+    _________________________________________________________________________________
+                       <|===( LABEL & TITLE HIGHLIGHTING )===|>
+    _______________________________________________________________________________*/
+    {
+      "tag": " <|| ",
+      "color": "#FFAE5E",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+        "tag": " <|[",
+        "color": "#A0FFA0",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+    },
+
+    {
+      "tag": " <||| ",
+      "color": "#8FEFFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+        "tag": " <|===( ",
+        "color": "#B480FF",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+      },
+    /*
+
+    .................................................................................
+                       <||| PRE-BUILT COMMENTS |||>
+    ...............................................................................*/
+    // !||> (!~CUATION~!)
+    {
+      "tag": " (!~CUATION~!) ",
+      "color": "#FFF014",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    // !||> (!~WARNING~!)
+    {
+      "tag": " (!~WARNING~!) ",
+      "color": "#FFF014",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    // !!|> (!!~~ISSUE~~!!)
+    {
+      "tag": " (!!~~ISSUE~~!!) ",
+      "color": "#FF1820",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+
+    // !!|> (!!~~BUG~~!!)
+    {
+      "tag": "(!!~~BUG~~!!)",
+      "color": "#F41F24",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    }
+  ]
 }
