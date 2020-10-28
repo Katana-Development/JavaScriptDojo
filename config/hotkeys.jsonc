@@ -1,0 +1,178 @@
+/*
+    |>  CTRL 
+
+
+
+
+*/
+
+[
+    /* 
+
+  ...........................| HOT-KEYS |...........................                            */
+
+    {
+        "key": "SHIFT+ENTER 1",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "console.log('\\n');"
+        }
+    },
+
+    // |> [#02]
+    {
+        "key": "SHIFT+ENTER 2",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "console.log(` ${this.foo} \\n`);"
+        }
+    },
+
+    // |> [#03]
+    {
+        "key": "SHIFT+ENTER 3",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "const {} = require('./');"
+        }
+    },
+
+    // |> [#04]
+    {
+        "key": "SHIFT+ENTER 4",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "/**\n * #### **FooFoo**\n* ____\n* @method alpha\n* @param {} beta\n* @param {} delta\n* @return {} gamma\n**/"
+        }
+    },
+
+    // |> [#05]:+
+
+    {
+        "key": "SHIFT+ENTER 5",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "/** @prettier \n * #### **FooFoo** \n* ____ \n* @file\n* @author Andrew J Chambers\n* @fileoverview\n**/"
+        }
+    },
+
+    // |> [#06]
+    {
+        "key": "SHIFT+ENTER 6",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "class Foo {\n    constructor(foo) {\nthis.foo = foo;\n}\n"
+        }
+    },
+
+    // |> [#07]
+    {
+        "key": "SHIFT+ENTER 7",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": ""
+        }
+    },
+
+    // |> [#08]
+    {
+        "key": "SHIFT+ENTER 8",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": ""
+        }
+    },
+
+    // |> [#09]
+    {
+        "key": "SHIFT+ENTER 9",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": ""
+        }
+    },
+
+    // |> [#10]:
+    {
+        "key": "SHIFT+ENTER 0",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": ""
+        }
+    },
+
+    // |> [#11]
+    {
+        "key": "SHIFT+ENTER C",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "const X = new;"
+        }
+    },
+
+    // |> [#12]
+    {
+        "key": "SHIFT+ENTER T",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "this.x = '';"
+        }
+    },
+
+    // |> [#13]
+    {
+        "key": "SHIFT+ENTER L",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "let x = null;"
+        }
+    },
+
+    // |> [#14]
+    {
+        "key": "SHIFT+ENTER V",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "var x = '';"
+        }
+    },
+
+    // ||> [#15]: Comment Title
+    {
+        "key": "SHIFT+ENTER =",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "/*\n        __________________________________________________________________________\n        |>                        <|COMMENT HIGHLIGHTS|>                        <|\n*/"
+        }
+    },
+
+    // |> [#14]:
+    {
+        "key": "SHIFT+ENTER -",
+        "command": "type",
+        "when": "editorTextFocus",
+        "args": {
+            "text": "/*\n\n<|===============================|FOO|===============================|>\t*/"
+        }
+    }
+]
+
+/*
+        __________________________________________________________________________
+        |>                        <|COMMENT HIGHLIGHTS|>                        <|
+*/

@@ -1,0 +1,37 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["google"],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "no-console": "off",
+        "no-var": "off",
+        "prefer-const": "off",
+        "require-jsdoc": "off",
+
+        "valid-jsdoc": "warn",
+        "no-unused-vars": "warn",
+        "no-unused-expressions": "warn",
+
+        "no-tabs": "error",
+        "indent": ["error", 4],
+        "max-len": [
+            "error",
+            {
+                "code": 100,
+                "tabWidth": 4,
+                "ignoreComments": true,
+                "ignoreStrings": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ]
+    }
+}
